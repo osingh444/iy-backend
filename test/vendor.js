@@ -13,9 +13,6 @@ chai.use(chaiHttp)
 //additionally, the vendor tests need to be updated because they retrieve the date
 //which is set depending on what day the review was written
 //probably easier to test loadvendor visually using the react portion of the site, but tests
-//DYNAMODB NEEDS TO BE RESET AFTER EACH TEST BECAUSE ONCE THE ACCOUNT IS CREATED AND REVIEWS ADDED, WILL
-//NO LONGER BE ABLE TO ADD BECAUSE INTENDED BEHAVIOR IS TO RETURN FALSE ON USER POSTING 2 REVIEW TO SAME VENDOR
-//HOPEFULLY THESE TESTS NEVER NEED TO BE RAN AGAIN
 //===================================
 
 describe('adding some vendors', () => {
